@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+
 import { JogoDaVelhaComponent } from './jogo-da-velha.component';
-
-
+import { JogoDaVelhaService } from './shared';
 
 @NgModule({
   declarations: [
@@ -15,6 +15,9 @@ import { JogoDaVelhaComponent } from './jogo-da-velha.component';
   // caso nao adicionado nao podera ser visualizado no app principal
   exports: [
     JogoDaVelhaComponent
+  ],
+  providers: [
+    JogoDaVelhaService
   ]
 })
 export class JogoDaVelhaModule { }
