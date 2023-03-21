@@ -45,4 +45,12 @@ export class JogoDaVelhaComponent implements OnInit {
   exibirVitoria(posX: number, posY: number): boolean {
     return this.service.exibirVitoria(posX, posY);
   }
+
+  get jogador(): number {
+    return this.service.jogador;
+  }
+
+  novoJogo(): void {
+    this.service.novoJogo();
+  }
 }
